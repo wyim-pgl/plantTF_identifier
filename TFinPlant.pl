@@ -61,7 +61,7 @@ while(<IN>){
 	my $num = @data;
 	next if($num == 0);
 	my $gene    = $data[0];
-	my $pfam_id = $data[5];
+	my $pfam_id = $data[2];
 	$pfam_id =~ s/\..*//g;
 	$infordb{$gene} .= $pfam_id."	"; 
 	}
